@@ -15,14 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "src",
-    "paths": {
-      "@app": ["app"],
-      "@app/*": ["app/*"],
-      "@assets": ["assets"],
-      "@assets/*": ["assets/*"]
-    }
+    "baseUrl": "src"
   },
-  "include": ["src", ".eslintrc.js"],
+  "include": ["src/**/*", "shims-svg.d.ts", ".eslintrc.js"],
+
   "compileOnSave": false
 }
