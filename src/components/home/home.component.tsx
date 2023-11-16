@@ -1,20 +1,21 @@
 import React from "react";
+import { homeStrings } from "./home.strings";
 
 export const Home = () => {
   return (
     <div className="flex flex-col justify-evenly items-center m-16 md:flex-row ">
       <div className="flex flex-col items-start">
-        <p>Olá pessoas,</p>
+        <p>{homeStrings.intro}</p>
         <div className="mt-4" />
         <h1 className="text-5xl font-extrabold">
-          EU SOU UM <br /> PROGRAMADOR
+          {homeStrings.suffix} <br /> {homeStrings.prefix}
         </h1>
         <div className="mt-4" />
-        <p>Seja bem-vindo ao meu portfólio website</p>
+        <p>{homeStrings.title}</p>
 
         <div className="mt-16" />
         <button className="bg-black text-white px-4 rounded-md font-bold">
-          Saiba mais sobre mim
+          {homeStrings.aboutButton}
         </button>
 
         <div className="mt-16" />
@@ -24,27 +25,33 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="icon/linkedin.svg" alt="Linkedin" />
+            <img
+              src="icon/linkedin.svg"
+              alt={homeStrings.mediaSocial.linkedin}
+            />
           </a>
           <a
             href="https://www.instagram.com/new__goncalves"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="icon/instagram.svg" alt="instagram" />
+            <img
+              src="icon/instagram.svg"
+              alt={homeStrings.mediaSocial.instagram}
+            />
           </a>
           <a
             href="https://github.com/Antonio-Jr28"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="icon/Git.svg" alt="gihub" />
+            <img src="icon/Git.svg" alt={homeStrings.mediaSocial.github} />
           </a>
         </div>
       </div>
 
       <div className="w-96">
-        <img src="image/img/home.png" alt="teste" />
+        <img src="image/img/home.png" alt={homeStrings.caricature} />
       </div>
     </div>
   );
