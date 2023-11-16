@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex flex-col items-center justify-between p-4 h-20 w-auto shadow-xl md:flex-row md:justify-between md:items-center md:px-32 ">
-      <h1>Antonio Carlos</h1>
+      <h1 className="text-2xl">Antonio Carlos</h1>
 
       <NavbarMobile menuItems={menuItems} />
       <NavbarDesktop menuItems={menuItems} />
