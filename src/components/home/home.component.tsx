@@ -1,9 +1,10 @@
 import React from "react";
+
 import { homeStrings } from "./home.strings";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col justify-evenly items-center m-16 md:h-[600px] md:flex-row ">
+    <div className="flex flex-col justify-evenly items-center mx-16 md:h-[500px] md:flex-row ">
       <div className="flex flex-col items-start">
         <p>{homeStrings.intro}</p>
         <div className="mt-4" />
