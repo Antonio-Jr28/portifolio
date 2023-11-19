@@ -10,13 +10,13 @@ const ExperienceCard: React.FC<Experience> = ({ title, description }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   return (
-    <div className="flex flex-col items-center p-6 border-3 border-white bg-gray-700 text-white rounded-xl">
+    <div className="flex flex-col items-center p-4 border-3 border-white bg-gray-700 text-white shadow-xl rounded-xl">
       <h2 className="font-extrabold text-gray-300 text-center">{title}</h2>
 
-      <div className="mt-2" />
+      <div className="mt-4" />
 
       <p>
-        {showFullDescription ? description : description.slice(0, 200)}
+        {showFullDescription ? description : description.slice(0, 230)}
         {!showFullDescription && (
           <span
             className="text-blue-300 cursor-pointer"

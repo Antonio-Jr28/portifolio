@@ -13,8 +13,14 @@ export const App = () => {
       <Navbar />
       <Home />
       <About />
+
+      <div className="mt-[120px]" />
       <Portfolio />
+
+      <div className="mt-[120px]" />
       <Technologies />
+
+      <div className="mt-[120px]" />
       <Experiences />
     </div>
   );
