@@ -19,21 +19,21 @@ export const Portfolio = () => {
       <div className="flex flex-col items-start gap-10 md:flex-row">
         <a href="./">
           <img
-            className="w-[300px] h-[200px] shadow-xl rounded-lg"
+            className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/senec.png"
             alt=""
           />
         </a>
         <a href="./">
           <img
-            className="w-[300px] h-[200px] shadow-xl rounded-lg"
+            className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/delfos.png"
             alt=""
           />
         </a>
         <a href="./">
           <img
-            className="w-[300px] h-[200px] shadow-xl rounded-lg"
+            className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/rick-and-morty.png"
             alt=""
           />

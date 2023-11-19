@@ -10,7 +10,7 @@ const ExperienceCard: React.FC<Experience> = ({ title, description }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   return (
-    <div className="flex flex-col items-center p-4 border-3 border-white bg-gray-700 text-white shadow-xl rounded-xl">
+    <div className="flex flex-col items-center p-4 border-3 border-white bg-gray-700 text-white shadow-2xl rounded-xl">
       <h2 className="font-extrabold text-gray-300 text-center">{title}</h2>
 
       <div className="mt-4" />
