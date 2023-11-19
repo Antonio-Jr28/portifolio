@@ -1,7 +1,7 @@
 export const homeStrings = {
   intro: "Olá pessoas,",
   suffix: "EU SOU UM",
-  prefix: "PROGRAMADOR",
+  prefix: "PROGRAMADOR ",
   title: "Seja bem-vindo ao meu portifólio website",
   aboutButton: "Saiba mais sobre mim",
   caricature: "Caricatura",

@@ -8,7 +8,7 @@ export const Home = () => {
       <div className="flex flex-col items-start">
         <p>{homeStrings.intro}</p>
         <div className="mt-4" />
-        <h1 className="text-5xl font-extrabold">
+        <h1 className="text-5xl font-extrabold typewriter font-roboto">
           {homeStrings.suffix} <br /> {homeStrings.prefix}
         </h1>
         <div className="mt-4" />
