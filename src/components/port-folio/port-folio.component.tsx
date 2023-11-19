@@ -6,7 +6,7 @@ export const Portfolio = () => {
     <div className="flex flex-col justify-center items-center">
       <div className="mt-10" />
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl font-extrabold">{portFolioStrings.title}</h1>
 
         <div className="mt-4" />
