@@ -31,6 +31,6 @@
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.15em;
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4.5s steps(40, end), blink-caret 4.5s step-end infinite;
   animation-iteration-count: infinite; 
 }

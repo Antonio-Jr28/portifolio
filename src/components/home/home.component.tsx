@@ -8,11 +8,11 @@ export const Home = () => {
       <div className="flex flex-col items-start">
         <p>{homeStrings.intro}</p>
         <div className="mt-4" />
-        <h1 className="text-5xl font-extrabold typewriter font-roboto">
+        <h1 className="text-5xl font-extrabold font-roboto">
           {homeStrings.suffix} <br /> {homeStrings.prefix}
         </h1>
         <div className="mt-4" />
-        <p>{homeStrings.title}</p>
+        <p className="typewriter ">{homeStrings.title}</p>
 
         <div className="mt-16" />
         <button className="bg-black text-white px-4 rounded-md font-bold">
@@ -51,7 +51,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="w-96">
+      <div className="w-96 shadow-xl rounded-lg">
         <img src="image/img/home.png" alt={homeStrings.caricature} />
       </div>
     </div>
