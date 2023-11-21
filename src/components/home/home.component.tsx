@@ -4,22 +4,28 @@ import { homeStrings } from "./home.strings";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col justify-evenly items-center mx-16 md:h-[500px] md:flex-row ">
-      <div className="flex flex-col items-start mt-10 md:mt-44">
+    <div className="flex flex-col items-center mx-16 md:h-[500px] md:flex-row ">
+      <div className="flex flex-col items-start mt-10 pl-12 md:mt-44">
         <p>{homeStrings.intro}</p>
+
         <div className="mt-4" />
+
         <h1 className="text-5xl font-extrabold font-roboto">
           {homeStrings.suffix} <br /> {homeStrings.prefix}
         </h1>
+
         <div className="mt-4" />
-        <p className="typewriter ">{homeStrings.title}</p>
+
+        <p className="typewriter font-roboto">{homeStrings.title}</p>
 
         <div className="mt-16" />
+
         <button className="bg-black text-white px-4 rounded-md font-bold">
           {homeStrings.aboutButton}
         </button>
 
         <div className="mt-16" />
+
         <div className="flex flex-row w-[100px] gap-4">
           <a
             href="https://www.linkedin.com/in/antonio-carlos-1314a11b0/"
