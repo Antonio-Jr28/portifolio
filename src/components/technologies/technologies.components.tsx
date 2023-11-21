@@ -4,6 +4,7 @@ import { myTechnologiesStrings } from "./technologies.strings";
 export const Technologies = () => {
   return (
     <div>
+      <div className="mt-10 md:mt-44" />
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl font-extrabold">
           {myTechnologiesStrings.title}

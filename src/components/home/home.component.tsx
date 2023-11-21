@@ -5,7 +5,7 @@ import { homeStrings } from "./home.strings";
 export const Home = () => {
   return (
     <div className="flex flex-col justify-evenly items-center mx-16 md:h-[500px] md:flex-row ">
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start mt-10 md:mt-44">
         <p>{homeStrings.intro}</p>
         <div className="mt-4" />
         <h1 className="text-5xl font-extrabold font-roboto">
@@ -51,7 +51,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="w-96 shadow-xl rounded-lg">
+      <div className="w-96 shadow-xl rounded-lg mt-10 md:mt-44">
         <img src="image/img/home.png" alt={homeStrings.caricature} />
       </div>
     </div>

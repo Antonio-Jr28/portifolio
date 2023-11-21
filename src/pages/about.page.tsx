@@ -1,13 +1,13 @@
 import React from "react";
 
 import { Navbar } from "components/navbar/navbar.component";
-import { Home } from "components/home";
+import { About } from "components/about";
 
-export const HomePage = () => {
+export const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <Home />
+      <About />
     </>
   );
 };

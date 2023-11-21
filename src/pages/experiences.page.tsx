@@ -1,13 +1,13 @@
 import React from "react";
 
 import { Navbar } from "components/navbar/navbar.component";
-import { Home } from "components/home";
+import { Experiences } from "components/experiences";
 
-export const HomePage = () => {
+export const ExperiencesPage = () => {
   return (
     <>
       <Navbar />
-      <Home />
+      <Experiences />
     </>
   );
 };

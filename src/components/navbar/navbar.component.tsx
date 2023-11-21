@@ -6,11 +6,11 @@ import { navbarString } from "./navbar-string";
 
 export const Navbar = () => {
   const menuItems = [
-    { label: navbarString.home, link: "./" },
-    { label: navbarString.About, link: "./" },
-    { label: navbarString.portfolio, link: "./" },
-    { label: navbarString.service, link: "./" },
-    { label: navbarString.summary, link: "./" },
+    { label: navbarString.home, link: "/" },
+    { label: navbarString.About, link: "/sobre" },
+    { label: navbarString.portfolio, link: "/portifolio" },
+    { label: navbarString.service, link: "/tecnologias" },
+    { label: navbarString.summary, link: "/experiencias" },
   ];
 
   return (
