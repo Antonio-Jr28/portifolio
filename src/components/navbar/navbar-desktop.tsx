@@ -1,5 +1,6 @@
 import React from "react";
 import { navbarString } from "./navbar-string";
+import { Link } from "react-router-dom";
 
 interface NavbarDesktopProps {
   menuItems: { label: string; link: string }[];
@@ -17,9 +18,11 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ menuItems }) => {
           {item.label}
         </a>
       ))}
-      <button className="border-4 w-[100px] shadow-md shadow-gray-400">
-        {navbarString.contactButton}
-      </button>
+      <Link target="_blank" to={"https://w.app/5PpcNK"}>
+        <button className="border-4 w-[100px] shadow-md shadow-gray-400">
+          {navbarString.contactButton}
+        </button>
+      </Link>
     </div>
   );
 };

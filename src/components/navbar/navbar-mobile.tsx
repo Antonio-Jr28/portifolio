@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { navbarString } from "./navbar-string";
+import { Link } from "react-router-dom";
 
 interface NavbarMobileProps {
   menuItems: { label: string; link: string }[];
@@ -43,9 +44,11 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ menuItems }) => {
             </li>
           ))}
           <li>
-            <button className="border-4 w-[100px] shadow-md shadow-gray-400">
-              {navbarString.contactButton}
-            </button>
+            <Link target="_blank" to={"https://w.app/5PpcNK"}>
+              <button className="border-4 w-[100px] shadow-md shadow-gray-400">
+                {navbarString.contactButton}
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
