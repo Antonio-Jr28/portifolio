@@ -5,7 +5,7 @@ import { homeStrings } from "./home.strings";
 export const Home = () => {
   return (
     <div className="flex flex-col items-center mx-16 md:h-[500px] md:flex-row ">
-      <div className="flex flex-col items-start mt-10 pl-12 md:mt-44">
+      <div className="flex flex-col items-start mt-10 pl-12 md:px-8 md:mt-44">
         <p>{homeStrings.intro}</p>
 
         <div className="mt-4" />
