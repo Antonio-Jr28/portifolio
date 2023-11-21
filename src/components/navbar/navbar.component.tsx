@@ -9,7 +9,7 @@ export const Navbar = () => {
     { label: navbarString.home, link: "/" },
     { label: navbarString.About, link: "/sobre" },
     { label: navbarString.portfolio, link: "/portifolio" },
-    { label: navbarString.service, link: "/tecnologias" },
+    { label: navbarString.technology, link: "/tecnologias" },
     { label: navbarString.summary, link: "/experiencias" },
   ];
 
