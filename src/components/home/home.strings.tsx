@@ -1,8 +1,8 @@
 export const homeStrings = {
-  intro: "Olá pessoas,",
-  suffix: "EU SOU UM",
+  intro: "Olá,",
+  suffix: "SOU UM",
   prefix: "PROGRAMADOR ",
-  title: "Seja bem-vindo ao meu portifólio website     ",
+  title: "Seja bem-vindo(a) ao meu portifólio website",
   aboutButton: "Saiba mais sobre mim",
   caricature: "Caricatura",
   mediaSocial: {
