@@ -35,3 +35,7 @@
   animation-iteration-count: infinite; 
 }
 
+.anime {
+  transform: translateX(-800px) rotate(180deg);
+  opacity: 0;
+}

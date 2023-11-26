@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import { homeStrings } from "./home.strings";
+import { gsap } from "gsap";
 
 export const Home = () => {
+  useLayoutEffect(() => {
+    gsap.to(".anime", {
+      x: 0,
+      opacity: 1,
+      rotate: "0deg",
+    });
+
+    return () => {
+      gsap.killTweensOf(".anime");
+    };
+  }, []);
   return (
     <div className="flex flex-col items-center justify-around mx-16 md:h-[500px] md:flex-row ">
       <div className="flex flex-col items-start pl-10 mt-10 px-5 md:mt-44">
@@ -57,7 +69,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="w-96 shadow-xl rounded-lg mt-10 md:mt-44">
+      <div className="md:anime w-96 shadow-xl rounded-lg mt-10 md:mt-44">
         <img src="image/img/home.png" alt={homeStrings.caricature} />
       </div>
     </div>
