@@ -69,7 +69,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="md:anime w-96 shadow-xl rounded-lg mt-10 md:mt-44">
+      <div className="w-96 shadow-xl rounded-lg mt-10 md:mt-44 anime">
         <img src="image/img/home.png" alt={homeStrings.caricature} />
       </div>
     </div>
