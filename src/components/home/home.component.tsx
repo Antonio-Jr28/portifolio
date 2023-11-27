@@ -18,18 +18,18 @@ export const Home = () => {
   }, []);
   return (
     <div className="anime flex flex-col items-center justify-around mx-16 md:h-[500px] md:flex-row ">
-      <div className="flex flex-col items-start mt-10 md:mt-44">
+      <div className="flex flex-col px-4 items-center md:items-start mt-10 md:mt-44">
         <p>{homeStrings.intro}</p>
 
         <div className="mt-4" />
 
-        <h1 className="text-5xl font-extrabold font-roboto">
-          {homeStrings.suffix} <br /> {homeStrings.prefix}
+        <h1 className="typewriter text-2xl md:text-5xl font-extrabold font-roboto">
+          {homeStrings.suffix} {homeStrings.prefix}
         </h1>
 
         <div className="mt-4" />
 
-        <p className="typewriter font-roboto">{homeStrings.title}</p>
+        <p className="font-roboto">{homeStrings.title}</p>
 
         <div className="mt-16" />
         <Link to={"/sobre"}>
