@@ -17,7 +17,7 @@ export const Home = () => {
     };
   }, []);
   return (
-    <div className="flex flex-col items-center justify-around mx-16 md:h-[500px] md:flex-row ">
+    <div className="anime flex flex-col items-center justify-around mx-16 md:h-[500px] md:flex-row ">
       <div className="flex flex-col items-start mt-10 md:mt-44">
         <p>{homeStrings.intro}</p>
 
