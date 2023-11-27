@@ -3,7 +3,7 @@ export const navbarString = {
   home: "Home",
   About: "Sobre",
   portfolio: "Portifólio",
-  technology: "tecnologia",
+  technology: "Tecnologia",
   summary: "Resumo",
   contactButton: "Contato",
 };

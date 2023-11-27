@@ -39,3 +39,7 @@
   transform: translateX(-800px) rotate(180deg);
   opacity: 0;
 }
+
+.body {
+  margin: 0;
+}

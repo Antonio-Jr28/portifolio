@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from "react";
 
 import { homeStrings } from "./home.strings";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   useLayoutEffect(() => {
@@ -17,7 +18,7 @@ export const Home = () => {
   }, []);
   return (
     <div className="flex flex-col items-center justify-around mx-16 md:h-[500px] md:flex-row ">
-      <div className="flex flex-col items-start pl-10 mt-10 px-5 md:mt-44">
+      <div className="flex flex-col items-start mt-10 md:mt-44">
         <p>{homeStrings.intro}</p>
 
         <div className="mt-4" />
@@ -31,11 +32,11 @@ export const Home = () => {
         <p className="typewriter font-roboto">{homeStrings.title}</p>
 
         <div className="mt-16" />
-
-        <button className="bg-black text-white px-4 rounded-md font-bold">
-          {homeStrings.aboutButton}
-        </button>
-
+        <Link to={"/sobre"}>
+          <button className="bg-black text-white rounded-md font-bold p-3">
+            {homeStrings.aboutButton}
+          </button>
+        </Link>
         <div className="mt-16" />
 
         <div className="flex flex-row w-[100px] gap-4">
