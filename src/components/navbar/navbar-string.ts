@@ -4,6 +4,6 @@ export const navbarString = {
   About: "Sobre",
   portfolio: "Portifólio",
   technology: "Tecnologia",
-  summary: "Resumo",
+  summary: "Experiências",
   contactButton: "Contato",
 };

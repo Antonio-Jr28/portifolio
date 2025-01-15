@@ -18,7 +18,10 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ menuItems }) => {
           {item.label}
         </a>
       ))}
-      <Link target="_blank" to={"https://w.app/5PpcNK"}>
+      <Link
+        target="_blank"
+        to={"https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"}
+      >
         <button className="border-4 w-[100px] shadow-md shadow-gray-400">
           {navbarString.contactButton}
         </button>

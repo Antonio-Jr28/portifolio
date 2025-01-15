@@ -21,21 +21,25 @@ export const Portfolio = () => {
           <img
             className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/senec.png"
-            alt=""
+            alt="pagina inicial do site criado"
           />
         </a>
         <a target="_blank" href="https://portaldedelfos.com/" rel="noreferrer">
           <img
             className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/delfos.png"
-            alt=""
+            alt="pagina inicial do site criado"
           />
         </a>
-        <a href="./">
+        <a
+          target="_Blank"
+          href="https://rickandmortyag.netlify.app/"
+          rel="noreferrer"
+        >
           <img
             className="w-[300px] h-[200px] shadow-2xl rounded-lg"
             src="image/img/rick-and-morty.png"
-            alt=""
+            alt="pagina inicial do site criado"
           />
         </a>
       </div>
