@@ -1,6 +1,19 @@
 import React from "react";
 import { AboutStrings } from "./about.strings";
 
+type HardSkillKey = keyof typeof AboutStrings.hardSkills;
+
+const hardSkills: { name: HardSkillKey; level: number }[] = [
+  { name: "react", level: 4 },
+  { name: "typescript", level: 3 },
+  { name: "nodeJs", level: 3 },
+  { name: "styledCompoonents", level: 5 },
+  { name: "tailWindCSS", level: 3 },
+  { name: "css", level: 5 },
+  { name: "html", level: 5 },
+  { name: "figma", level: 4 },
+];
+
 export const About = () => {
   return (
     <div>
@@ -8,8 +21,8 @@ export const About = () => {
         <img
           className="w-56 h-56"
           src="image/img/about-antonio.png"
-          alt="Foto no desenvolvedor"
-        ></img>
+          alt="Foto do desenvolvedor"
+        />
         <div className="mt-4" />
 
         <h1 className="text-3xl text-center">{AboutStrings.title}</h1>
@@ -24,53 +37,35 @@ export const About = () => {
         <div className="mt-10" />
 
         <div className="flex flex-col items-center gap-6 md:flex-row">
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.react}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-4.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.typescript}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-3.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.nodeJs}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-3.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">
-              {AboutStrings.hardSkills.styledCompoonents}
-            </h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-5.svg" alt="status do React" />
-          </div>
+          {hardSkills.slice(0, 4).map((skill, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <h3 className="text-2xl">
+                {AboutStrings.hardSkills[skill.name]}
+              </h3>
+              <div className="mt-2" />
+              <img
+                src={`icon/nivel-${skill.level}.svg`}
+                alt={`status do ${skill.name}`}
+              />
+            </div>
+          ))}
         </div>
 
         <div className="mt-10" />
 
         <div className="flex flex-col items-center gap-6 md:flex-row">
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.tailWindCSS}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-3.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.css}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-5.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.html}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-5.svg" alt="status do React" />
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-2xl">{AboutStrings.hardSkills.figma}</h3>
-            <div className="mt-2" />
-            <img src="icon/nivel-4.svg" alt="status do React" />
-          </div>
+          {hardSkills.slice(4).map((skill, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <h3 className="text-2xl">
+                {AboutStrings.hardSkills[skill.name]}
+              </h3>
+              <div className="mt-2" />
+              <img
+                src={`icon/nivel-${skill.level}.svg`}
+                alt={`status do ${skill.name}`}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
